@@ -21,11 +21,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.mt6765
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.mt6765 \
-    libgptutils \
-    libz \
-    libcutils
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl \
+    android.hardware.boot@1.0-impl.recovery \
+    android.hardware.boot@1.0-service \
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
@@ -33,3 +32,11 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+
+PRODUCT_SHIPPING_API_LEVEL := 30
+
+TARGET_OTA_ASSERT_DEVICE := tonga
+
+TARGET_COPY_OUT_VENDOR := motorola
+

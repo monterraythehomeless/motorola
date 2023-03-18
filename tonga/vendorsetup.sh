@@ -5,10 +5,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_tonga.mk
-
-COMMON_LUNCH_CHOICES := \
-    twrp_tonga-user \
-    twrp_tonga-userdebug \
-    twrp_tonga-eng
+#add_lunch_combo omni_tonga-user
+#add_lunch_combo omni_tonga-userdebug
+#add_lunch_combo omni_tonga-eng
